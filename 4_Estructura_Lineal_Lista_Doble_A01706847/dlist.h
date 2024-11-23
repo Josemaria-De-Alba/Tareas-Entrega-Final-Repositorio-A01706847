@@ -1,6 +1,11 @@
 #ifndef DLIST_H_
 #define DLIST_H_
 
+/*
+Josemaria De Alba
+A01706847
+*/
+
 #include <iostream>
 #include <sstream>
 #include <cstring>
