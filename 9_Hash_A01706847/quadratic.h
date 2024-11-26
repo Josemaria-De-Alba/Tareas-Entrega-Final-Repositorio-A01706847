@@ -75,21 +75,25 @@ long Quadratic<Key, Value>::indexOf(const Key k) const {
 	unsigned int i, start;
 
 	start = i = func(k) % size;
+	
 	do {
 		if (keys[i] == k) {
 			return i;
 		}
 		i = (i + 1) % size;
 	} while (start != i);
+	
 	return -1;
 }
 
 template <class Key, class Value>
 bool Quadratic<Key, Value>::put(Key k, Value v) {
-    if (full()) return false;
-
-    unsigned int start, j = 0;
-    long pos;
+		unsigned int start, j = 0;
+		long pos;
+	
+		if (full()){
+			 return false;
+		}
 
     pos = indexOf(k);
     if (pos != -1) {
@@ -109,6 +113,7 @@ bool Quadratic<Key, Value>::put(Key k, Value v) {
         }
         j++;
     } while (j < size);
+	
     return false;
 }
 
@@ -133,6 +138,7 @@ std::string Quadratic<Key, Value>::toString() const {
             aux << "(" << i << " " << keys[i] << " : " << values[i] << ") ";
         }
     }
+	
 	return aux.str();
 }
 
