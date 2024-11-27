@@ -3,5 +3,3 @@ Estas actividades son para que practiques la implementación de algoritmos y est
 Cuando tengas que entregar la actividad en canvas por favor solo entrega el archivo.h que lleva el nombre del algoritmo o estructura como se viene en el encabezado del main.
 
 Los cambios que puedes esperar son: el manejo de excepciones, los casos de prueba, los formatos de entrada y salida de algunas funciones.
-
-Todo Funcionando Bien, No Hay Cambios
