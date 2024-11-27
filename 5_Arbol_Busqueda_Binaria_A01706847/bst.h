@@ -256,26 +256,20 @@ std::string BST<T>::visit(){
 	if (aux.back() == ' ') {  
 			aux.pop_back();
 	}
-	aux += "]";
-	aux += "\n";
-	
-	aux += "[";
+	aux += "]\n[";
+
 	root ->inorder(aux);
 	if (aux.back() == ' ') { 
 			aux.pop_back(); 
 	}
-	aux += "]";
-	aux += "\n";
+	aux += "]\n[";
 	
-	aux += "[";
 	root ->postorder(aux);
 	if (aux.back() == ' ') {  
 			aux.pop_back(); 
 	}
-	aux += "]";
-	aux += "\n";
+	aux += "]\n[";
 	
-	aux += "[";
 	treeH=root->height();
 	while (level<=treeH){
 			root->byLevel(aux,level);
